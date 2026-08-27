@@ -109,6 +109,7 @@
 
 .cart-summary-item {
   display: flex;
+  gap: 50px;
   justify-content: space-between;
   margin-bottom: 5px;
   font-size: 0.8rem;
@@ -116,6 +117,7 @@
 
 .cart-summary-item span:first-child {
   color: #7b6550;
+  text-align: left;
 }
 
 .cart-summary-total {
@@ -144,13 +146,13 @@
   margin: 0 auto;
 }
 
-.shipping-form {
+.delivery-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.shipping-form input {
+.delivery-form input {
   padding: 15px;
   background: #f8ede1;
   border: 1px solid #d9c3a7;
@@ -160,7 +162,7 @@
   outline: none;
 }
 
-.shipping-form input:focus {
+.delivery-form input:focus {
   border-color: #8b5e3c;
 }
 

@@ -43,9 +43,9 @@ const Checkout = () => {
   }, 0);
 
   // const tax = subtotal * 0.08;
-  const shipping = 65;
+  const delivery = 0;
 
-  const totalPrice = subtotal + shipping;
+  const totalPrice = subtotal + delivery;
 
   const buildOrderProducts = () => checkoutItems.map((item) => ({
     productId: item.productId || item._id,
@@ -206,8 +206,8 @@ const Checkout = () => {
     <div className="checkout-container" style={{textAlign: 'center', padding: '10px'}}>
       <h2>Checkout</h2>
       <div className="checkout-content">
-        <form onSubmit={handleSubmit} className="shipping-form">
-          <h3>Shipping Address</h3>
+        <form onSubmit={handleSubmit} className="delivery-form">
+          <h3>Delivery Address</h3>
           <input type="text" placeholder="Full Name" required value={address.fullName} onChange={(e) => setAddress({...address, fullName: e.target.value})} />
           <PhoneInput
             country={'in'}
@@ -242,8 +242,8 @@ const Checkout = () => {
               <span>₹{(tax).toFixed(2)}</span>
             </div> */}
             <div className="cart-summary-item">
-              <span>Shipping:</span>
-              <span>₹{(shipping).toFixed(2)}</span>
+              <span>Delivery charges:</span>
+              <span>FREE</span>
             </div>
             <div className="cart-summary-total">
               <span>Total:</span>

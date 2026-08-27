@@ -39,8 +39,8 @@ const createdOrder = async (req, res) => {
         }
 
         // const tax = totalAmount * 0.08;
-        const shipping = 65;
-        totalAmount += shipping;
+        const delivery = 0;
+        totalAmount += delivery;
 
         const options = {
             amount: Math.round(totalAmount * 100), // Amount in paise

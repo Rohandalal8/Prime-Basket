@@ -36,9 +36,9 @@ const ReturnPolicy = () => {
         Certain explicit categories such as perishable items, custom software, digital media, or physically tampered items are heavily restricted and do not qualify for any standard refund sequence.
       </p>
 
-      <h4 style={{ color: '#8b5e3c', marginTop: '25px', marginBottom: '10px' }}>4. Shipping Transit Costs</h4>
+      <h4 style={{ color: '#8b5e3c', marginTop: '25px', marginBottom: '10px' }}>4. Delivery Transit Costs</h4>
       <p>
-        You will actively remain strictly responsible for covering your own outbound logistical shipping rates associated with returning the item. Restocking fees may conditionally apply.
+        You will actively remain strictly responsible for covering your own outbound logistical delivery rates associated with returning the item. Restocking fees may conditionally apply.
       </p>
     </div>
   );
