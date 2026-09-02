@@ -39,7 +39,7 @@ const createdOrder = async (req, res) => {
         }
 
         // const tax = totalAmount * 0.08;
-        const delivery = 0;
+        const delivery = 65; // Flat delivery cost
         totalAmount += delivery;
 
         const options = {

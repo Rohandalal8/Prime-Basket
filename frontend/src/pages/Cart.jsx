@@ -96,7 +96,7 @@ const Cart = () => {
   const totalDiscount = cartItems.reduce((acc, item) => acc + ((item.price * item.qty * item.discount) / 100), 0);
   const totalDiscountedPrice = totalPrice - totalDiscount;
   // const tax = totalDiscountedPrice * 0.08;
-  const delivery = 0;
+  const delivery = 65;
   const finalTotal = totalDiscountedPrice + delivery;
 
   return (
@@ -177,7 +177,7 @@ const Cart = () => {
             </div> */}
             <div className="cart-summary-item">
               <span>Delivery charges:</span>
-              <span>FREE</span>
+              <span>₹{delivery.toFixed(2)}</span>
             </div>
             <div className="cart-summary-total">
               <span>Total:</span>

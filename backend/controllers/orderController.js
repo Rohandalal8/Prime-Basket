@@ -45,7 +45,7 @@ const createOrder = async (req, res) => {
         const order = new Order({
             user: req.user._id,
             products: orderProducts,
-            totalPrice: calculatedTotal, // Adding flat delivery cost of 0
+            totalPrice: calculatedTotal + 65, // Adding flat delivery cost of 65
             address,
             paymentId
         });

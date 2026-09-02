@@ -43,7 +43,7 @@ const Checkout = () => {
   }, 0);
 
   // const tax = subtotal * 0.08;
-  const delivery = 0;
+  const delivery = 65; // Flat delivery cost
 
   const totalPrice = subtotal + delivery;
 
@@ -243,7 +243,7 @@ const Checkout = () => {
             </div> */}
             <div className="cart-summary-item">
               <span>Delivery charges:</span>
-              <span>FREE</span>
+              <span>₹{delivery.toFixed(2)}</span>
             </div>
             <div className="cart-summary-total">
               <span>Total:</span>
